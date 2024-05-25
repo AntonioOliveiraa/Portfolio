@@ -1,0 +1,138 @@
+@import url('variables.css');
+
+main {
+    display: flex;
+    min-height: calc(90vh - 60px);
+    margin: 0 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.skills {
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.skills h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.skills .highlight {
+    color: var(--highlight-color);
+}
+
+.skills p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.skill-icon svg {
+    font-size: 2rem;
+    fill: var(--background-color);
+}
+
+.skill p {
+    margin-top: 1.0rem;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.skill:hover .skill-icon {
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    main {
+        margin: 0 50px;
+    }
+
+    .skills h1 {
+        font-size: 2.4rem;
+    }
+
+    .skills p {
+        font-size: 1rem;
+    }
+
+    .skill {
+        max-width: 120px;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-icon svg {
+        font-size: 1.5rem;
+    }
+
+    .skill p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin: 0 20px;
+    }
+
+    .skills h1 {
+        font-size: 2rem;
+    }
+
+    .skills p {
+        font-size: 0.9rem;
+    }
+
+    .skill {
+        max-width: 100px;
+    }
+
+    .skill-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill-icon svg {
+        font-size: 1.2rem;
+    }
+
+    .skill p {
+        font-size: 0.8rem;
+    }
+}
