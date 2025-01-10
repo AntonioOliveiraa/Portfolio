@@ -64,6 +64,7 @@ header {
     font-size: 1.3rem;
     display: flex;
     align-items: center;
+    gap: 1vw;
     transition: 0.3s;
 }
 
@@ -73,10 +74,6 @@ header {
         'wght' 300,
         'GRAD' 0,
         'opsz' 24;
-}
-
-.nav-menu a .material-symbols-outlined {
-    margin-right: 8px;
 }
 
 .nav-menu a:hover {
@@ -143,35 +140,46 @@ footer {
         align-items: center;
         gap: 3vw;
         background: white;
-        border-radius: 20px;
-        padding: 10px;
-        width: 75%;
-        justify-content: center;
+        border-radius: 30px;
+        width: 50%;
         position: fixed;
         bottom: 0;
-        left: calc(50% - 40%);
+        left: calc(50% - 25%);
         z-index: 1000;
     }
 
     .nav-menu li {
-        margin: 10px 0;
+        margin: 0;
+        border-radius: 60%;
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-menu a {
         color: var(--background-color);
+        gap: 0;
     }
 
     .nav-menu a:hover {
-        color: var(--primary-color);
+        color: var(--background-color);
     }
 
     ul li.ativo {
-        border-bottom: 3px solid var(--background-color);
+        background-color: var(--primary-color);
+        border: 1px solid var(--background-color);
         transition: border-bottom 0.3s;
     }
     
     ul li.ativo:hover {
-        border-color: var(--primary-color);
+        border-color: var(--background-color);
+        color: var(--background-color);
+    }
+
+    .nav-menu a .text-menu {
+        display: none;
     }
 
     .footer-content img {
