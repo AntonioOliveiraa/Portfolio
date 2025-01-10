@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuItems = document.querySelectorAll('.nav-menu li');
+    const menuItems = document.querySelectorAll('.nav-menu li a');
 
     menuItems.forEach(item => {
         item.addEventListener('click', () => {

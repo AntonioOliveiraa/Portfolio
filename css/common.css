@@ -18,6 +18,7 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
+    font-feature-settings: 'liga';
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
   }
@@ -172,7 +173,6 @@ footer {
 
     .nav-menu li {
         margin: 0;
-        border-radius: 50%;
         width: 10vw;
         height: 10vw;
         display: flex;
@@ -191,6 +191,7 @@ footer {
     }
 
     ul li.ativo {
+        border-radius: 50%;
         background-color: var(--primary-color);
         border: 1px solid var(--background-color);
         transition: border-bottom 0.3s;
