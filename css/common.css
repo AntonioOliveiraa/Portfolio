@@ -193,7 +193,6 @@ footer {
     ul li.ativo {
         border-radius: 25vw;
         background-color: var(--primary-color);
-        border: 1px solid var(--background-color);
         transition: border-bottom 0.3s;
     }
     
