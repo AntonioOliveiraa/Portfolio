@@ -1,3 +1,11 @@
+window.addEventListener('load', function() {
+    var loader = document.getElementById('loading-container');
+    var content = document.getElementById('content');
+    
+    loader.style.display = 'none';
+    content.style.display = 'block';
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a');
 
