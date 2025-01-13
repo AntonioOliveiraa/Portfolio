@@ -268,3 +268,11 @@ footer {
         opacity: 1;
     }
 }
+
+body.loading #content {
+    display: none;
+}
+
+body.loading #loading-container {
+    display: flex;
+}

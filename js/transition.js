@@ -2,8 +2,11 @@ window.addEventListener('load', function() {
     var loader = document.getElementById('loading-container');
     var content = document.getElementById('content');
     
-    loader.style.display = 'none';
+    document.body.classList.remove('loading');
     content.style.display = 'block';
+    loader.style.display = 'none';
+    
+    content.classList.add('fade-in');
 });
 
 document.addEventListener('DOMContentLoaded', function() {
